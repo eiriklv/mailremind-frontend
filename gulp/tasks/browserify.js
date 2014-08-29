@@ -31,11 +31,6 @@ gulp.task('browserify', function() {
             input: ['./client/javascript/home.js'],
             output: 'home.js',
             destination: './client/public/javascript/'
-        },
-        {
-            input: ['./client/javascript/profile.js'],
-            output: 'profile.js',
-            destination: './client/public/javascript/'
-        },
+        }
     ]);
 });
