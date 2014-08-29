@@ -155,28 +155,6 @@ var config = module.exports = convict({
                 env: 'GOOGLE_CALLBACK_URL'
             }
         }
-    },
-    instagram: {
-        client: {
-            id: {
-                doc: 'Instagram application client id.',
-                default: 'abcdefghijklmnopqrstuvwxyz',
-                env: 'INSTAGRAM_CLIENT_ID'
-            },
-            secret: {
-                doc: 'Instagram application client id.',
-                default: 'abcdefghijklmnopqrstuvwxyz',
-                env: 'INSTAGRAM_CLIENT_SECRET'
-            }
-        },
-        callback: {
-            url: {
-                doc: 'Instagram application callback url.',
-                format: 'url',
-                default: 'http://localhost:3000/auth/instagram/callback',
-                env: 'INSTAGRAM_CALLBACK_URL'
-            }
-        }
     }
 });
 

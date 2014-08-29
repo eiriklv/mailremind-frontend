@@ -37,16 +37,6 @@ exports = module.exports = function(collection, mongoose, validators) {
             token: String,
             email: String,
             name: String
-        },
-        instagram: {
-            id: {
-                type: String,
-                index: true
-            },
-            token: String,
-            username: String,
-            name: String,
-            profile_picture: String
         }
     });
 
