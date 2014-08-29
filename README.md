@@ -111,7 +111,7 @@ Scheduled e-mail reminders. Check it out at [mailremind.me](http://mailremind.me
 ```sh
 #!/bin/sh
 export PORT=3000 \
-export SERVICE_NAME="MailRemind.me \
+export SERVICE_NAME="MailRemind.me" \
 export DEBUG="*" \
 export NODE_ENV="development" \
 export CLIENT_API_PATH="/api" \
