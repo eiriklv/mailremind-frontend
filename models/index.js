@@ -1,7 +1,6 @@
 exports = module.exports = function(mongoose, validators) {
     return {
-        User: require('./user')('user', mongoose, validators),
-        Resource: require('./resource')('resource', mongoose, validators),
-        Comment: require('./comment')('comment', mongoose)
+        User: require('./user')('User', mongoose, validators),
+        Message: require('./message')('Message', mongoose, validators)
     };
 };
