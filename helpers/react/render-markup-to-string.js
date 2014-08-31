@@ -1,6 +1,7 @@
 var ReactAsync = require('react-async');
 var debug = require('debug')('react-markup');
 var util = require('util');
+var nodejsx = require('node-jsx').install();
 
 exports = module.exports = function() {
     return function(options) {
