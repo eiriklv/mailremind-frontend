@@ -5,12 +5,12 @@
 var React = require('react');
 
 // sub-components
-var TodoList = require('./todo-list');
-var TodoInput = require('./todo-input');
-var TodoDeleteButton = require('./todo-delete-button');
+var ReminderList = require('./reminder-list');
+var ReminderInput = require('./reminder-input');
+var ReminderDeleteButton = require('./reminder-delete-button');
 
 module.exports = React.createClass({
-    displayName: 'TodoApp',
+    displayName: 'ReminderApp',
 
     getInitialState: function() {
         return {items: [], index: 0, text: ''};
@@ -40,14 +40,14 @@ module.exports = React.createClass({
     },
 
     handleDelete: function () {
-        var todoList = this.state.items;
+        var reminderList = this.state.items;
 
         // remove the completed items
-        for (var i = todoList.length - 1; i >= 0; i--) {
-            if (todoList[i].complete) todoList.splice(i, 1);
+        for (var i = reminderList.length - 1; i >= 0; i--) {
+            if (reminderList[i].complete) reminderList.splice(i, 1);
         }
 
-        this.setState({items: todoList});
+        this.setState({items: reminderList});
     },
 
     handleComplete: function (childProps) {
@@ -73,7 +73,7 @@ module.exports = React.createClass({
                     <h3 className='panel-title'>{title} ({count} item{count == 1 ? '' : 's'})</h3>
                 </div>
                 <div className='panel-body' style={{backgroundColor: 'whitesmoke'}}>
-                    <TodoInput
+                    <ReminderInput
                         handleSubmit={this.handleSubmit}
                         handleChange={this.onChange}
                         handleDelete={this.handleDelete}
@@ -82,10 +82,10 @@ module.exports = React.createClass({
                         placeholder={this.props.placeholder}
                     />
 
-                    <TodoDeleteButton handleDelete={this.handleDelete} />
+                    <ReminderDeleteButton handleDelete={this.handleDelete} />
                 </div>
 
-                <TodoList
+                <ReminderList
                     items={this.state.items}
                     handleComplete={this.handleComplete}
                 />

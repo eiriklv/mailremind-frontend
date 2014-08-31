@@ -5,17 +5,17 @@
 var React = require('react');
 
 // sub-components
-var TodoItem = require('./todo-item');
+var ReminderItem = require('./reminder-item');
 
 module.exports = React.createClass({
-    displayName: 'TodoList',
+    displayName: 'ReminderList',
 
     render: function () {
         var count = 0;
 
         var createItem = function (item) {
             return (
-                <TodoItem
+                <ReminderItem
                     handleComplete={this.props.handleComplete}
                     key={item.id}
                     text={item.text}

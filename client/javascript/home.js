@@ -20,7 +20,7 @@ var Header = require('./modules/components/common/header');
 var ClientScripts = require('./modules/components/common/client-scripts');
 
 // custom components
-var TodoApp = require('./modules/components/todo-app');
+var ReminderApp = require('./modules/components/reminder-app');
 var Time = require('./modules/components/time');
 
 var App = React.createClass({
@@ -53,7 +53,7 @@ var App = React.createClass({
                     <div className="MainPage container">
                         <Time startTime={this.state.startTime} />
 
-                        <TodoApp
+                        <ReminderApp
                             type='focus'
                             title='FOCUS AREAS'
                             skin='success'

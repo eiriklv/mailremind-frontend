@@ -5,7 +5,7 @@
 var React = require('react');
 
 module.exports = React.createClass({
-    displayName: 'TodoInput',
+    displayName: 'ReminderInput',
 
     render: function() {
         return (

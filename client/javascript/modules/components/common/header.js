@@ -16,16 +16,8 @@ module.exports = React.createClass({
         console.log('updating header');
     },
 
-    componentDidMount: function() {
-        this.setActiveNavigationLink();
-    },
-
     shouldComponentUpdate: function() {
         return false;
-    },
-
-    setActiveNavigationLink: function() {
-        document.getElementById('nav-' + document.body.id).className = 'active';
     },
 
     render: function() {
