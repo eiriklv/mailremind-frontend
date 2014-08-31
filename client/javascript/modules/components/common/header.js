@@ -44,11 +44,7 @@ module.exports = React.createClass({
                     </div>
 
                     <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
-
-                        <ul className='nav navbar-nav'>
-                            <li id='nav-home'><a href='/'>Home</a></li>
-                            <li id='nav-profile'><a href='/profile'>Profile</a></li>
-
+                        <ul className='nav navbar-nav pull-right'>
                             <li className='dropdown'>
                                 <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Logged in: {this.state.fullname} <span className='caret'></span></a>
                                 <ul className='dropdown-menu' role='menu'>
@@ -56,7 +52,6 @@ module.exports = React.createClass({
                                     <li><a href='/logout'>Log out</a></li>
                                 </ul>
                             </li>
-
                         </ul>
                     </div>
                 </div>
