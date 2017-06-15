@@ -28,7 +28,7 @@ Scheduled e-mail reminders. Check it out at [mailremind.me](http://mailremind.me
 * [jquery](http://www.jquery.com/)
 
 #### Testing:
-* [mocha](http://visionmedia.github.io/mocha/)
+* [mocha](http://mochajs.org/)
 * [chai](http://chaijs.com/)
 * [sinon](http://sinonjs.org/)
 
